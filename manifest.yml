@@ -1,0 +1,11 @@
+---
+applications:
+- name: rebuildtargetgroupapidemo
+  path: target/demo-0.0.1-SNAPSHOT.jar
+  timeout: 600
+  routes:
+    - route: rebuildtargetgroupapidemo.cfapps.sap.hana.ondemand.com
+  memory: 2048MB
+  instances: 1
+  buildpacks:
+  - sap_java_buildpack
