@@ -20,7 +20,7 @@ public class TargetGroupController {
     }
 
     @PostMapping("/rebuildTargetGroup")
-    public ResponseEntity<String> greeting(@RequestBody TargetGroupRequestEntity targetGroupRequestEntity, @RequestHeader("Authorization") String authorization) {
+    public ResponseEntity<String> rebuildTargetGroup(@RequestBody TargetGroupRequestEntity targetGroupRequestEntity, @RequestHeader("Authorization") String authorization) {
     	return targetGroupService.rebuildTargetGroup(targetGroupRequestEntity,authorization);
     }
 }
